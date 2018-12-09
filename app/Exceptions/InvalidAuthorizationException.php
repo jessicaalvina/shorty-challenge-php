@@ -9,8 +9,8 @@
 namespace App\Exceptions;
 
 
-use App\Libraries\HTTPStatus;
-use App\Libraries\ResponseCode;
+use App\Constants\HTTPStatus;
+use App\Constants\ResponseCode;
 
 class InvalidAuthorizationException extends RLCustomExceptionHandler
 {

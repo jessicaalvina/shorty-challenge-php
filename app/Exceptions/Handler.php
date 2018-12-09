@@ -2,8 +2,8 @@
 
 namespace App\Exceptions;
 
-use App\Libraries\HTTPStatus;
-use App\Libraries\ResponseCode;
+use App\Constants\HTTPStatus;
+use App\Constants\ResponseCode;
 use Exception;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Auth\Access\AuthorizationException;

@@ -6,7 +6,7 @@
  * Time: 22.48
  */
 
-namespace App\Libraries;
+namespace App\Constants;
 
 
 class ResponseCode
