@@ -80,7 +80,7 @@ class Handler extends ExceptionHandler
         $name = explode('-', $name);
         $name = end($name);
 
-        \Rollbar::init(
+        /*\Rollbar::init(
             [
                 'access_token' => env('ROLLBAR_TOKEN'),
                 'environment' => $name
@@ -91,7 +91,7 @@ class Handler extends ExceptionHandler
             \Rollbar::report_message($e->getMessage(), \Level::INFO, $request->all(), $e);
         } else {
             \Rollbar::report_exception($e, $request->all());
-        }
+        }*/
 
         return response()->json($responseData, $httpStatus);
 
