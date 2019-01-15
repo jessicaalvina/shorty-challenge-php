@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aashari
- * Date: 06/12/18
- * Time: 11.50
- */
 
 namespace App\Http\Controllers\V1;
 
@@ -16,12 +10,6 @@ use Illuminate\Support\Facades\Response;
 
 class ShortyController extends Controller
 {
-
-    /**
-     * @param $shortcode
-     * @param ShortyService $shortyService
-     * @return \Illuminate\Http\JsonResponse
-     */
     public function getByShortcode($shortcode, ShortyService $shortyService)
     {
         $data = $shortyService->getByShortcode($shortcode);

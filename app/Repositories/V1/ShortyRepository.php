@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aashari
- * Date: 06/12/18
- * Time: 11.50
- */
 
 namespace App\Repositories\V1;
 
@@ -12,12 +6,6 @@ use App\Repositories\Repository;
 
 class ShortyRepository extends Repository
 {
-
-    /**
-     * @param $id
-     * @param bool $includeDeleted
-     * @return \Illuminate\Database\Query\Builder|mixed
-     */
     public function getByShortcode($shortcode)
     {
 
