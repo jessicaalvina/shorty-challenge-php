@@ -14,5 +14,6 @@
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 $router->get('/', 'HomeController@index');
-$router->get('/v1/users/{id}','V1\UserController@getById');
-$router->post('/v1/users/{id}','V1\UserController@updateById');
+$router->get('/{shortcode}','V1\ShortyController@getByShortcode');
+$router->get('/{shortcode}/stats','V1\ShortyController@getByShortcodeStats');
+$router->post('/shorten','V1\ShortyController@postByShortcode');
